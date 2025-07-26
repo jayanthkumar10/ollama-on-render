@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: ollama-server
+    env: docker
+    dockerfilePath: Dockerfile
+    plan: starter  # or better if required
+    autoDeploy: true
+    ports:
+      - 11434
